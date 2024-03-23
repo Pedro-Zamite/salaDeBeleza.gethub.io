@@ -945,6 +945,12 @@ body {
     text-align: justify;
   }
 }
+@media screen and (max-width: 654px) {
+  #sobre {
+    gap: 10px;
+    margin: 0 2%;
+  }
+}
 #servico {
   margin: 5% 10% 0 10%;
   height: 700px;
