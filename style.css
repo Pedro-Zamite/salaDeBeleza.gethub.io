@@ -1062,33 +1062,8 @@ body {
   #servico .container_servico_card .card_servico {
     width: 25%;
     height: 100%;
-    cursor: pointer;
-    background-image: url("latino-hair-salon-owner-taking-care-client.jpg");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    -o-object-fit: cover;
-       object-fit: cover;
   }
-  #servico .container_servico_card .card_servico .opacidade {
-    width: 100%;
-    height: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: rgba(0, 0, 0, 0.491);
-    transition: 0.3s;
-  }
-  #servico .container_servico_card .card_servico .opacidade p {
-    color: #fff;
-    font-size: 20px;
-  }
-  #servico .container_servico_card .card_servico .opacidade:hover {
-    opacity: 0.4;
-  }
-  #servico .container_servico_card .card_servico .opacidade:hover p {
-    display: none;
-  }
+
   #servico .container_servico_card #servicos_secundarios {
     display: flex;
     width: 75%;
@@ -1109,7 +1084,6 @@ body {
   #servico .container_servico_card .card_servico {
     height: 100%;
     width: 25%;
-    background-color: rgb(207, 19, 144);
   }
 }
 @media screen and (max-width: 950px) {
@@ -1249,7 +1223,6 @@ body {
 }
 #depoimento #card_depoimento .card_slide_depoimento #slide_card .card {
   border: 5px solid #025;
-  background-color: rgb(207, 19, 144);
   border-radius: 10px;
   cursor: pointer;
   width: 230px;
