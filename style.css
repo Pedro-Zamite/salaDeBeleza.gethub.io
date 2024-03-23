@@ -1040,7 +1040,6 @@ body {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  -o-object-fit: cover;
      object-fit: cover;
 }
 #servico .container_servico_card #servicos_secundarios .card_servico_secundarios:nth-of-type(2) {
@@ -1048,7 +1047,6 @@ body {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  -o-object-fit: cover;
      object-fit: cover;
 }
 #servico .container_servico_card #servicos_secundarios .card_servico_secundarios:nth-of-type(3) {
@@ -1056,7 +1054,6 @@ body {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  -o-object-fit: cover;
      object-fit: cover;
 }
 #servico .container_servico_card #servicos_secundarios .card_servico_secundarios:nth-of-type(4) {
@@ -1064,7 +1061,6 @@ body {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  -o-object-fit: cover;
      object-fit: cover;
 }
 #servico .btn_servico {
@@ -1141,7 +1137,12 @@ body {
     gap: 10px;
   }
 }
-
+@media screen and (max-width: 654px){
+  #servico {
+    width: 96%;
+    margin: 0 2%;
+}
+}
 @media screen and (max-width: 428px) {
   #servico {
     height: 600px;
@@ -1205,7 +1206,7 @@ body {
   border-radius: 10px;
   position: relative;
   height: 500px;
-  overflow: hidden;
+  overflow: hidden !important;
 }
 #depoimento #h2_depoimento {
   display: none;
@@ -1324,6 +1325,10 @@ body {
   }
 }
 @media screen and (max-width: 650px) {
+
+    #depoimento {
+      margin: 0 2%;
+    }
   #depoimento #card_depoimento {
     margin-left: 10%;
   }
@@ -1480,6 +1485,10 @@ body {
   background-color: transparent;
   border: 1px solid rgb(206, 206, 206);
 }
+#contato #formulario form input:focus
+~ #email, #nome, #contato #formulario form input:user-valid ~ #email, #nome{
+  color: rgb(206, 206, 206);
+}
 #contato #formulario form textarea {
   width: 100%;
   padding: 10px !important;
@@ -1528,6 +1537,12 @@ body {
   }
   #contato #formulario .opacity {
     padding: 0 30px !important;
+  }
+}
+@media screen and (max-width: 654px) {
+  #contato {
+    margin: 30px 2% 30px 2%;
+    width: 96%;
   }
 }
 @media screen and (max-width: 428px) {
