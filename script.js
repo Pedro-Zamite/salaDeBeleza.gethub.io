@@ -32,21 +32,49 @@ for (let i = 0; i < 4; i++) {
     if(i == 0){
         card.setAttribute("id", "primeiro")
         card.style.cssText = "background-image: url('medium-shot-woman-spending-quality-time-outdoors.jpg'); background-position: center;   background-size: cover; color: #fff;"
-        p.innerHTML = "Lorem ipsum dolor sit amet.";
+  
+            card.onmouseenter = () => {
+                    p.innerHTML = "Lorem ipsum dolor sit amet.";  
+            }     
+            card.onmouseleave = () => {
+                    p.innerHTML = " ";  
+            }
+
     }
     if (i == 1) {
         card.style.cssText = "background-image: url('happy-woman-posing-medium-shot.jpg'); background-position: center;   background-size: cover; color: #fff;"
-        p.innerHTML = "Lorem ipsum dolor sit amet.";
+        
+        card.onmouseenter = () => {
+            p.innerHTML = "Lorem ipsum dolor sit amet.";  
+    }     
+        card.onmouseleave = () => {
+            p.innerHTML = " ";  
+    }
+
     } 
     if(i == 2) {
         
         card.style.cssText = "background-image: url('pensive-pretty-young-black-woman-standing-outdoors.jpg'); background-position: center;   background-size: cover; color: #fff;"
-        p.innerHTML = "Lorem ipsum dolor sit amet.";
+        
+        card.onmouseenter = () => {
+            p.innerHTML = "Lorem ipsum dolor sit amet.";  
+    }     
+        card.onmouseleave = () => {
+            p.innerHTML = " ";  
+    }
+
     }
     if(i == 3) {
         
         card.style.cssText = "background-image: url('mulher-senior-expressiva-posando.jpg'); background-position: center;   background-size: cover; color: #fff;"
-        p.innerHTML = "Lorem ipsum dolor sit amet.";
+        
+        card.onmouseenter = () => {
+            p.innerHTML = "Lorem ipsum dolor sit amet.";  
+    }     
+        card.onmouseleave = () => {
+            p.innerHTML = " ";  
+    }
+
     }
     array_slide.push(card);
     depoimentos.appendChild(card);
