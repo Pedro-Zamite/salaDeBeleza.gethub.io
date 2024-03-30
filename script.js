@@ -22,21 +22,26 @@ function createCard() {
     card.setAttribute("class", "card");
     return card;
 }
-
 const array_slide = [];
 
 for (let i = 0; i < 4; i++) {
     const card = createCard();
+    const cardOpacidade = document.createElement("div");
+    cardOpacidade.setAttribute("class", "card-opacidade");
     const p = document.createElement("p")
-    card.appendChild(p)
+    p.style.cssText = " margin-top:-50%;"
+    cardOpacidade.appendChild(p)
+    card.appendChild(cardOpacidade)
     if(i == 0){
         card.setAttribute("id", "primeiro")
         card.style.cssText = "background-image: url('medium-shot-woman-spending-quality-time-outdoors.jpg'); background-position: center;   background-size: cover; color: #fff;"
   
             card.onmouseenter = () => {
+                p.style.cssText = " margin-top:0%; transition: .5s;"
                     p.innerHTML = "Lorem ipsum dolor sit amet.";  
             }     
             card.onmouseleave = () => {
+                p.style.cssText = " margin-top:-50%; transition: .5s;"
                     p.innerHTML = " ";  
             }
 
@@ -45,9 +50,11 @@ for (let i = 0; i < 4; i++) {
         card.style.cssText = "background-image: url('happy-woman-posing-medium-shot.jpg'); background-position: center;   background-size: cover; color: #fff;"
         
         card.onmouseenter = () => {
+            p.style.cssText = " margin-top:0%; transition: .5s;"
             p.innerHTML = "Lorem ipsum dolor sit amet.";  
     }     
         card.onmouseleave = () => {
+            p.style.cssText = " margin-top:-50%; transition: .5s;"
             p.innerHTML = " ";  
     }
 
@@ -57,9 +64,11 @@ for (let i = 0; i < 4; i++) {
         card.style.cssText = "background-image: url('pensive-pretty-young-black-woman-standing-outdoors.jpg'); background-position: center;   background-size: cover; color: #fff;"
         
         card.onmouseenter = () => {
+            p.style.cssText = " margin-top:0%; transition: .5s;"
             p.innerHTML = "Lorem ipsum dolor sit amet.";  
     }     
         card.onmouseleave = () => {
+            p.style.cssText = " margin-top:-50%; transition: .5s;"
             p.innerHTML = " ";  
     }
 
@@ -69,9 +78,11 @@ for (let i = 0; i < 4; i++) {
         card.style.cssText = "background-image: url('mulher-senior-expressiva-posando.jpg'); background-position: center;   background-size: cover; color: #fff;"
         
         card.onmouseenter = () => {
+            p.style.cssText = " margin-top:0%; transition: .5s;"
             p.innerHTML = "Lorem ipsum dolor sit amet.";  
     }     
         card.onmouseleave = () => {
+            p.style.cssText = " margin-top:-50%; transition: .5s;"
             p.innerHTML = " ";  
     }
 
@@ -80,6 +91,7 @@ for (let i = 0; i < 4; i++) {
     depoimentos.appendChild(card);
 
 }
+console.log(depoimentos)
 
 const btn_prev = document.querySelector("#btn_prev");
 const btn_next = document.querySelector("#btn_next");
