@@ -9,7 +9,7 @@
 
 body {
   overflow-x: hidden;
-}
+  }
 
 #navbar {
   display: flex;
@@ -32,7 +32,7 @@ body {
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  animation: logo 5s linear infinite reverse;
+  animation: logo 20s linear infinite reverse;
 }
 @keyframes logo {
   0% {
@@ -45,6 +45,7 @@ body {
 #navbar #menu_humburguer {
   display: none;
 }
+
 .card:hover ~ .card .card-opacidade{
   opacity: 0.5;
   transition: 0.5s;
@@ -55,13 +56,7 @@ body {
   left: 0;
   z-index: 1;
   background-color: rgba(0, 0, 0, 0.977);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
   color: rgb(255, 255, 255);
-
-
 }
 
 @media screen and (min-width: 1504.1px) {
@@ -437,7 +432,7 @@ body {
   background-size: cover;
   -o-object-fit: cover;
      object-fit: cover;
-  height: 100%;
+  height: 90%;
   width: 50%;
 }
 
@@ -971,6 +966,7 @@ body {
 }
 #servico {
   margin: 5% 10% 0 10%;
+  position: relative;
   height: 700px;
   width: 80%;
 }
@@ -1081,6 +1077,7 @@ body {
   background-size: cover;
      object-fit: cover;
 }
+
 #servico .btn_servico {
   display: flex;
   align-items: center;
